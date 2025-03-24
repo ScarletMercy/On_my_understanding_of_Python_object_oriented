@@ -52,7 +52,7 @@ def main():
 if __name__ == '__main__':
     main()
 
-#yongdaodefangfa
+# yongdaodefangfa
 # id()
 # type()
 # hex()
