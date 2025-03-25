@@ -3,8 +3,8 @@ import math
 
 def radius_judgement(radius):
     """半径合法性校验函数"""
-    if not isinstance(radius, (int,float)):  # 类型校验：仅接受整型和浮点型
-        raise TypeError('半径必须是整型')
+    if not isinstance(radius, (int, float)):  # 类型校验：仅接受整型和浮点型
+        raise TypeError('半径必须是整型或浮点型')
     elif radius >= 0:  # 值域校验：非负数
         return radius
     else:
@@ -44,3 +44,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# 方法/属性	适用场景	行业案例
+# radius_judgement	输入参数合法性校验	金融系统金额校验、医疗数据范围检查
+# @property	计算属性或敏感数据保护	电商库存实时统计、用户隐私数据脱敏
+# 惰性计算 (area)	计算成本高的属性（如数据库查询、复杂运算）	物流路径优化、科学仿真模型
